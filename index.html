@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portofolio Saya</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Halo, saya <span class="highlight">[Nama Kamu]</span></h1>
+    <p>Frontend Developer | UI/UX Enthusiast | Tech Learner</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#tentang">Tentang</a></li>
+      <li><a href="#proyek">Proyek</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <section id="tentang">
+    <h2>Tentang Saya</h2>
+    <p>Saya adalah pengembang web yang suka membangun antarmuka pengguna yang bersih dan interaktif. Saat ini fokus belajar teknologi web modern seperti React dan Tailwind CSS.</p>
+  </section>
+
+  <section id="proyek">
+    <h2>Proyek Terbaru</h2>
+    <div class="project-card-container">
+      <div class="project-card" onclick="bukaLink('https://github.com/username/proyek1')">
+        <h3>Proyek 1</h3>
+        <p>Aplikasi To-do List dengan JavaScript.</p>
+      </div>
+      <div class="project-card" onclick="bukaLink('https://github.com/username/proyek2')">
+        <h3>Proyek 2</h3>
+        <p>Website Portfolio dengan HTML dan CSS responsif.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="kontak">
+    <h2>Kontak</h2>
+    <form onsubmit="kirimPesan(event)">
+      <input type="text" id="nama" placeholder="Nama Kamu" required />
+      <input type="email" id="email" placeholder="Email Kamu" required />
+      <textarea id="pesan" placeholder="Pesan..." required></textarea>
+      <button type="submit">Kirim</button>
+    </form>
+    <p id="status"></p>
+  </section>
+
+  <footer>
+    <p>© 2025 [Nama Kamu] | Dibuat dengan ❤️ dan JavaScript</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
